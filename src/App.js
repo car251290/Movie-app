@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
-//import axios from 'react';
 import './App.css'
 import "./MovieCard";
 import MovieCard from "./MovieCard";
@@ -12,20 +11,6 @@ const API_URL = `http://www.omdbapi.com/?i=tt3896198&apikey=c728dd20`;
 const App = () => {
     const [movies,setMovies]= useState([]);
     const [searchterm, setsearch]= useState()
-
- //   const searchMovies = async(title) => {
- //       const response = await fetch(`${API_URL}&s=${title}`);
-
-//        const data = await response.json();
-//       setMovies(data.Search);
-//        console.log(data);
-//    }
-
-   // useEffect( () => {
-     //   searchMovies('superman')
-
-
-    //},[]);
 
     useEffect(()=>{
      const searchMovies = async(title)=> {
@@ -51,7 +36,7 @@ const App = () => {
                 <img 
                 alt='search'
                // onClick={()=> searchMovies(searchterm)}
-                //onClick={handleClick}
+                
                 />
             </div>
            
