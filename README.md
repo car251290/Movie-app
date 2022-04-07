@@ -11,6 +11,8 @@ JavaScript Object Notation (JSON) is a standard text-based format for representi
 ## React
 React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared for display.
 
+React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+
 ## JavaScript
  1. HTML to define the content of web pages
 
