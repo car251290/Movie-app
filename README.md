@@ -21,3 +21,7 @@ Since component logic is written in JavaScript instead of templates, you can eas
  2. CSS to specify the layout of web pages
 
  3. JavaScript to program the behavior of web pages
+ 
+JavaScript functions are reusable blocks of code that perform a specific task, taking some form of input and returning an output.
+
+To define a function, you must use the function keyword, followed by a name, followed by parentheses ( ). Then you have to write the function logic between curly brackets { }
