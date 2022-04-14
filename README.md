@@ -26,6 +26,9 @@ React calls the Welcome component with {name: 'Sara'} as the props.
 Our Welcome component returns a <h1>Hello, Sara</h1> element as the result.
 React DOM efficiently updates the DOM to match <h1>Hello, Sara</h1>.
 
+React elements are immutable. Once you create an element, you can’t change its children or attributes. An element is like a single frame in a movie: it represents the UI at a certain point in time.
+
+With our knowledge so far, the only way to update the UI is to create a new element, and pass it to root.render().
 
 ## JavaScript
  1. HTML to define the content of web pages
