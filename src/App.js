@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
+//import axios from 'react';
 import './App.css'
 import "./MovieCard";
 import MovieCard from "./MovieCard";
@@ -12,6 +13,12 @@ const App = () => {
     const [movies,setMovies]= useState([]);
     const [searchterm, setsearch]= useState()
 
+    let handlersearch = (e) => {
+      setMovies(e.target.value);
+    }
+
+
+
     useEffect(()=>{
      const searchMovies = async(title)=> {
        const response = await fetch(`${API_URL}&s=${title}`);
@@ -19,7 +26,7 @@ const App = () => {
        setMovies(data.Search);
        console.log(data);
      }
-     searchMovies('Batman')
+     searchMovies()
     },[]);
    
     
@@ -35,8 +42,8 @@ const App = () => {
                 </input>
                 <img 
                 alt='search'
-               // onClick={()=> searchMovies(searchterm)}
-                
+               //onClick={()=> searchMovies()}
+                onClick={handlersearch}
                 />
             </div>
            
