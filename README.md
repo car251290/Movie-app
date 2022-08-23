@@ -15,7 +15,7 @@ React makes it painless to create interactive UIs. Design simple views for each 
 
 Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.
 
-Function and Class Components
+### Function and Class Components
 
 This function is a valid React component because it accepts a single “props” (which stands for properties) object argument with data and returns a React element. We call such components “function components” because they are literally JavaScript functions.
 
