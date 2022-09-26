@@ -21,10 +21,6 @@ This function is a valid React component because it accepts a single “props”
 
 Let’s recap what happens in this example:
 
-We call root.render() with the <Welcome name="Sara" /> element.
-React calls the Welcome component with {name: 'Sara'} as the props.
-Our Welcome component returns a <h1>Hello, Sara</h1> element as the result.
-React DOM efficiently updates the DOM to match 
 
 React elements are immutable. Once you create an element, you can’t change its children or attributes. An element is like a single frame in a movie: it represents the UI at a certain point in time.
 
