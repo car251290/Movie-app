@@ -36,3 +36,7 @@ With our knowledge so far, the only way to update the UI is to create a new elem
 JavaScript functions are reusable blocks of code that perform a specific task, taking some form of input and returning an output.
 
 To define a function, you must use the function keyword, followed by a name, followed by parentheses ( ). Then you have to write the function logic between curly brackets { }
+
+Closures
+
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
